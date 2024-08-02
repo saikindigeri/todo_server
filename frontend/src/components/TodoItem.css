@@ -1,0 +1,91 @@
+/* TodoItem.css */
+
+/* Container for each todo item */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Checkbox styling */
+.todo-item input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.2);
+}
+
+/* Text styling */
+.todo-item span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+
+    transition: color 0.3s ease;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Edit button styling */
+.todo-item button.edit,
+.todo-item button.save,
+.todo-item button.cancel,
+.todo-item button.delete {
+    background-color: #3bff9a; /* Yellow background for edit/save */
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-item button.edit:hover,
+.todo-item button.save:hover,
+.todo-item button.cancel:hover {
+    background-color: darkgreen; /* Darker yellow on hover */
+    transform: scale(1.05);
+}
+
+.todo-item button.delete {
+    background-color: #ff6f61; /* Red background for delete */
+    color: #fff;
+}
+
+.todo-item button.delete:hover {
+    background-color: darkolivegreen; /* Darker red on hover */
+}
+
+/* Save button styling */
+.todo-item button.save {
+    background-color: #4caf50; /* Green background for save */
+    color: #fff;
+    margin-left: 20px;
+}
+
+.todo-item button.save:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Cancel button styling */
+.todo-item button.cancel {
+    background-color: #f44336; /* Red background for cancel */
+    color: #fff;
+  
+}
+
+.todo-item button.cancel:hover {
+    background-color: #darkolivegreen; /* Darker red on hover */
+}
